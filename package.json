@@ -1,0 +1,14 @@
+{
+  "name": "rpc-plus",
+  "version": "1.0.0",
+  "description": "RPC Plus is a free and open-source tool that lets you personalize your Discord Rich Presence effortlessly. You can customize your presence without any coding required.",
+  "main": "./src/index.js",
+  "scripts": {
+    "rpc": "node ./src/index.js"
+  },
+  "author": "Charge",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
