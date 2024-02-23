@@ -13,6 +13,13 @@ RPC Plus is a free and open-source tool that lets you personalize your Discord R
 
 ## Instructions
 
+### Setting up Application
+
+1. **Create the Application**
+   > Go to the [Discord Developer Portal](https://discord.com/developers/applications).<br>
+   > Create a new application.<br>
+   > Name your app based on your desired RPC name.<br>
+
 ### Installation
 
 To install RPC Plus, follow these steps:
@@ -50,3 +57,5 @@ To install RPC Plus, follow these steps:
 
 7. **Verify Installation**<br>
    Open Discord and check your Discord Rich Presence to verify that RPC Plus is running correctly. You should see the presence reflecting the configuration specified in the `config.json` file.
+
+### 
