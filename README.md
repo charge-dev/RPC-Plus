@@ -44,10 +44,7 @@ To install RPC Plus, follow these steps:
    > Delete the `rpc-plus` folder.
 3. **Install Dependencies**
    ```bash
-   npm init
-   ```
-   ```bash
-   discord-rpc
+   npm i discord-rpc
    ```
 4. **Configure RPC Plus**
    > Open the `config.json` file located in the `src` folder.<br>
