@@ -39,13 +39,16 @@ To install RPC Plus, follow these steps:
    ```bash
    git clone https://github.com/charge-dev/rpc-plus.git
    ```
+2. **Remove Unnecessary Files**
+   > Move all files/folders outside the `rpc-plus` folder.<br>
+   > Delete the `rpc-plus` folder.
 
-2. **Navigate to the Directory**
+3. **Navigate to the Directory**
    ```bash
    cd rpc-plus
    ```
 
-3. **Install Dependencies**
+4. **Install Dependencies**
    ```bash
    npm init
    ```
@@ -53,11 +56,11 @@ To install RPC Plus, follow these steps:
    discord-rpc
    ```
 
-4. **Configure RPC Plus**
+5. **Configure RPC Plus**
    > Open the `config.json` file located in the `src` folder.<br>
    > Customize the Discord Rich Presence settings according to your preferences.
 
-5. **Run the Application**
+6. **Run the Application**
    ```bash
    node .
    ```
