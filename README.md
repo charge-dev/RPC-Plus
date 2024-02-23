@@ -21,8 +21,15 @@ RPC Plus is a free and open-source tool that lets you personalize your Discord R
    > Name your app based on your desired RPC name.<br>
 2. **Upload Assets**
    > Go to your application.<br>
-   > Go to the Rich Presence using the sidebar.<br>
+   > Go to Rich Presence using the sidebar.<br>
    > Click on Add Image(s) and select your image.
+3. **Connect the Application**
+   > Go to your application.<br>
+   > Go to OAuth2 using the sidebar.<br>
+   > Copy the Client ID.<br>
+   > Open the `config.json` file located in the `src` folder.<br>
+   > Replace `CLIENT_ID` with the copied Client ID.<br>
+   > Replace `LARGE_IMAGE_KEY` or `SMALL_IMAGE_KEY` with your asset name.
 
 ### Installation
 
