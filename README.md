@@ -57,5 +57,3 @@ To install RPC Plus, follow these steps:
 
 7. **Verify Installation**<br>
    Open Discord and check your Discord Rich Presence to verify that RPC Plus is running correctly. You should see the presence reflecting the configuration specified in the `config.json` file.
-
-### 
