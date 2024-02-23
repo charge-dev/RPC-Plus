@@ -55,5 +55,5 @@ To install RPC Plus, follow these steps:
 6. **Verify Installation**<br>
    Open Discord and check your Discord Rich Presence to verify that RPC Plus is running correctly. You should see the presence reflecting the configuration specified in the `config.json` file.
 7. **Disconnect RPC Plus (Optional)**<br>
-   > Make sure you have the VS Code terminal opened.
+   > Make sure you have the IDE terminal opened.
    > Press `CTRL` and `C` to stop the process.
