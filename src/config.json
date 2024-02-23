@@ -6,9 +6,9 @@
         "data": {
             "details": "DETAILS",
             "state": "STATE",
-            "largeImage": "LARGE_IMAGE",
+            "largeImage": "LARGE_IMAGE_KEY",
             "largeImageText": "LARGE_IMAGE_TEXT",
-            "smallImage": "SMALL_IMAGE",
+            "smallImage": "SMALL_IMAGE_KEY",
             "smallImageText": "SMALL_IMAGE_TEXT",
             "instance": "INSTANCE",
             "buttons": {
