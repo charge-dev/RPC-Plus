@@ -46,7 +46,7 @@ To install RPC Plus, follow these steps:
 4. **Configure RPC Plus**
    > Open the `config.json` file located in the `src` folder.<br>
    > Replace `CLIENT_ID` with the copied Client ID.<br>
-   > Replace `LARGE_IMAGE_KEY` or `SMALL_IMAGE_KEY` with your asset name.
+   > Replace `LARGE_IMAGE_KEY` or `SMALL_IMAGE_KEY` with your asset name.<br>
    > Customize the Discord Rich Presence settings according to your preferences.
 5. **Run the Application**
    ```bash
