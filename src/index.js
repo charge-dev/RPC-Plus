@@ -16,15 +16,33 @@ DiscordRPC.register(clientId);
 async function setActivity() {
     if (!RPC) return;
 
-    // Set the Discord Rich Presence activity using data from config.json
+    // Initialize image variables with default values
+    let largeImageKey = 'none';
+    let largeImageText = 'none';
+    let smallImageKey = 'none';
+    let smallImageText = 'none';
+
+    // Check if large image is enabled
+    if (config.activity.data.images.largeImage.enabled === "true") {
+        largeImageKey = config.activity.data.images.largeImage.largeImageKey;
+        largeImageText = config.activity.data.images.largeImage.largeImageText;
+    }
+
+    // Check if small image is enabled
+    if (config.activity.data.images.smallImage.enabled === "true") {
+        smallImageKey = config.activity.data.images.smallImage.smallImageKey;
+        smallImageText = config.activity.data.images.smallImage.smallImageText;
+    }
+
+    // Set the Discord Rich Presence activity
     RPC.setActivity({
         details: config.activity.data.details,
         state: config.activity.data.state,
         startTimestamp: Date.now(),
-        largeImageKey: config.activity.data.largeImage,
-        largeImageText: config.activity.data.largeImageText,
-        smallImageKey: config.activity.data.smallImage,
-        smallImageText: config.activity.data.smallImageText,
+        largeImageKey: largeImageKey,
+        largeImageText: largeImageText,
+        smallImageKey: smallImageKey,
+        smallImageText: smallImageText,
         instance: config.activity.data.instance === "true",
         buttons: [
             {
