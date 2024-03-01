@@ -21,10 +21,12 @@
             },
             "buttons": {
                 "button1": {
+                    "enabled": "true",
                     "label": "BUTTON1_LABEL",
                     "url": "BUTTON1_URL"
                 },
                 "button2": {
+                    "enabled": "true",
                     "label": "BUTTON2_LABEL",
                     "url": "BUTTON2_URL"
                 }
