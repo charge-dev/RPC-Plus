@@ -34,6 +34,25 @@ async function setActivity() {
         smallImageText = config.activity.data.images.smallImage.smallImageText;
     }
 
+    // Define button variables
+    let buttons = [];
+
+    // Check if button 1 is enabled
+    if (config.activity.data.buttons.button1.enabled === "true") {
+        buttons.push({
+            label: config.activity.data.buttons.button1.label,
+            url: config.activity.data.buttons.button1.url
+        });
+    }
+
+    // Check if button 2 is enabled
+    if (config.activity.data.buttons.button2.enabled === "true") {
+        buttons.push({
+            label: config.activity.data.buttons.button2.label,
+            url: config.activity.data.buttons.button2.url
+        });
+    }
+
     // Set the Discord Rich Presence activity
     RPC.setActivity({
         details: config.activity.data.details,
@@ -44,18 +63,10 @@ async function setActivity() {
         smallImageKey: smallImageKey,
         smallImageText: smallImageText,
         instance: config.activity.data.instance === "true",
-        buttons: [
-            {
-                label: config.activity.data.buttons.button1.label,
-                url: config.activity.data.buttons.button1.url
-            },
-            {
-                label: config.activity.data.buttons.button2.label,
-                url: config.activity.data.buttons.button2.url
-            }
-        ]
+        buttons: buttons
     });
 };
+
 
 // Event listener for when the RPC client is ready
 RPC.on('ready', async () => {
